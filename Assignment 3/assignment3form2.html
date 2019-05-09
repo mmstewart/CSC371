@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Site Registration Form</title>
+</head>
+<body>
+    <form action="assignment2form2.php" method="post">
+        <div style="border:4px;border-style:solid;border-color:black;box-shadow:3px 3px 3px #888888">
+            <h1>&nbsp;Site Registration Form</h1>
+
+            &nbsp;&nbsp;Please complete the following form to register for our site
+            <br />
+            <br />
+            &nbsp;&nbsp;First Name: <input id="Text1" pattern="[A-Za-z]{1,32}" name="fName" placeholder="First name" title="Please enter your first name." type="text" required /> (First Name)
+            <br />
+            <br />
+            &nbsp;&nbsp;Last Name: <input id="Text2" pattern="[a-zA-Z' -]*" name="lName" placeholder="Last name" title="Please enter your last name." type="text" required /> (Last name)
+            <br />
+            <br />
+            &nbsp;&nbsp;Email: <input id="Text3" placeholder="name@domain.com" name="email" type="text" pattern="[A-Za-z0-9._%+-]{1,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" title="name@domain.com" required /> (name@domain.com)
+            <br />
+            <br />
+            &nbsp;&nbsp;Please fill out our optional survey:
+            <br />
+            <br />
+            &nbsp;&nbsp;What year are you in college?
+            <br />
+            <br />
+            &nbsp;&nbsp;<input id="Radio1" name="college" type="radio" value="Not yet in college" required />Not yet in college&nbsp;&nbsp;
+            <input id="Radio2" name="college" value="Freshman" type="radio" />Freshman&nbsp;&nbsp;
+            <input id="Radio3" name="college" value="Sophomore" type="radio" />Sophomore&nbsp;&nbsp;
+            <input id="Radio4" name="college" value="Junior" type="radio" />Junior&nbsp;&nbsp;
+            <input id="Radio5" name="college" value="Senior" type="radio" />Senior&nbsp;&nbsp;
+            <input id="Radio6" name="college" value="Graduate" type="radio" />Graduate&nbsp;&nbsp;
+            <br />
+            <br />
+            &nbsp;&nbsp;<input id="Submit1" type="submit" value="Submit" />
+            <input id="Reset1" type="reset" value="Clear" />
+            <br />
+            <br />
+        </div>
+    </form>
+</body>
+</html>

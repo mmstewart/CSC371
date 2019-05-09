@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Visitor Information</title>
+</head>
+<body>
+    <hr />
+    Visitor Information
+    <br />
+    <br />
+    <hr />
+    <br />
+    <form action="assignment3form1.php" method="post">
+        <table border="1" style="border-collapse:collapse">
+            <tr>
+                <td>Email address:</td>
+                <td><input id="Text1" type="text" name="email" pattern="[A-Za-z0-9._%+-]{1,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" title="your@email.com" required/></td>
+            </tr>
+            <tr>
+                <td>Do you use the web for:</td>
+                <td><input id="Checkbox1" type="checkbox" value="Research" name="chx[]"/>Research&nbsp;<input id="Checkbox2" type="checkbox" value="Purchases" name="chx[]" />Purchases&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Occupation:</td>
+                <td>
+                <select name="select" required>
+                    <option>(select one)</option>
+                    <option value="Banker">Banker</option>
+                    <option value="Programmer">Programmer</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Police officier">Police officer</option>
+                    <option value="Lawyer">Lawyer</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Want us to send you junk email?</td>
+                <td><input id="Radio1" type="radio" value="Absolutely" name="rad" required/>Absolutely&nbsp;&nbsp;<input id="Radio2" type="radio" value="No way, man" name="rad"/>No way, man&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <tr>
+                <th colspan="4">
+                    <input id="Submit1" type="submit" value="Submit" />&nbsp;&nbsp;&nbsp;<input id="Reset1" type="reset" value="Reset" />
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
