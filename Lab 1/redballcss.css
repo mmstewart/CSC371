@@ -1,0 +1,185 @@
+﻿/* Display HTML5 structural elements as blocks */
+header, section, aside, footer, nav {
+   display: block;
+}
+
+/* Default styles */
+* {
+   padding: 0px;
+   margin: 0px;
+}
+
+/* Body styles */
+body {
+   background-color: red;
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Styles for the Web page container */
+#container {
+   background: white url(redbar.png) top left repeat-y;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+   margin: 0px auto;
+   width: 1000px;
+}
+
+/* Styles for the page header */
+header {
+   background-color: white;
+   height: 100px;
+}
+
+/* Styles for the horizontal navigation list */
+nav.horizontal {
+   height: 70px;
+   background-color: white;
+   width: 100%;
+}
+
+nav.horizontal li {
+   background-color: white;
+   font-size: 16px;
+   float: left;
+   display: block;
+   height: 50px;
+   line-height: 50px;
+   margin: 0px 5px;
+   text-align: center;
+   width: 180px;
+}
+
+nav.horizontal li a {
+   background-color: red;
+
+   -moz-border-radius: 30px/25px;
+   -webkit-border-radius: 30 25px;
+   border-radius: 30px/25px;
+
+   color: white;
+
+   display: block;
+   text-decoration: none;
+}
+
+nav.horizontal li a:hover {
+   background-color: rgb(255, 101, 101);
+   color: black;
+}
+
+/* Styles for the vertical navigation list */
+nav.vertical {
+   clear: left;
+   float: left;
+   width: 200px;
+}
+
+nav.vertical li {
+   list-style: none;
+   text-indent: 20px;
+   margin: 20px 0px;
+}
+
+nav.vertical li a {
+   color: white;
+   text-decoration: none;
+}
+
+nav.vertical li a:hover {
+   color: black;
+}
+
+/* Styles for the main page section */
+#main {
+   background-color: rgb(255, 211, 211);
+   float: left;
+   width: 600px;
+}
+
+#main > p {
+   font-size: 20px;
+   margin: 15px;
+}
+
+#main img {
+   float: right;
+   margin: 15px;
+   width: 350px;
+
+   -moz-border-radius-bottomleft: 350px;
+   -webkit-bottom-left-radius: 350px;
+   border-bottom-left-radius: 350px;
+}
+
+/* Styles for the pizzeria coupons */
+#main .coupon {
+   background: url(slice.png) center center no-repeat,
+               url(notice.png) bottom right no-repeat;
+   background-color: white;
+   border: 5px dashed black;
+   float: left;
+   height: 150px;
+   margin: 20px 10px;
+   width: 170px;
+}
+
+#main .coupon h1 {
+   color: white;
+   background-color: rgb(192, 0, 0);
+   font-size: 16px;
+   font-variant: small-caps;
+   height: 25px;
+   letter-spacing: 2px;
+   text-align: center;
+}
+
+#main .coupon p {
+   font-size: 14px;
+   text-align: center;
+   margin: 5px;
+}
+
+/* Styles for the sidebar note about pizza facts */
+aside {
+   float: left;
+   width: 200px;
+}
+
+aside h1 {
+   color: rgb(192, 0, 0);
+   font-size: 20px;
+   font-weight: normal;
+   letter-spacing: 2px;
+   text-align: center;
+}
+
+aside li {
+   background-color: rgb(255, 135, 135);
+   
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+
+   color: black;
+
+   list-style: none;
+   margin: 10px;
+   padding: 5px;
+}
+
+/* Styles for the page footer */
+footer {
+   clear: left;
+   margin-left: 200px;
+}
+
+footer address {
+   border-top: 1px solid red;
+   color: red;
+   font-size: 10px;
+   font-style: normal;
+   text-align: center;
+   margin-top: 25px;
+   padding-bottom: 20px;
+}
+
