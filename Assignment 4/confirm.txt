@@ -1,0 +1,4 @@
+// JavaScript source code
+function myFunction() {
+    window.location.href = "email1.php";
+}
