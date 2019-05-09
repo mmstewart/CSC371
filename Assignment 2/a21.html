@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My Guest Book</title>
+    <script type="text/javascript" src="a21.js"></script>
+    <link rel="stylesheet" type="text/css" href="assignment2p1.css">
+</head>
+<body>
+    <h1>My Guest Book</h1>
+    <form method="get" action="">
+        <fieldset name="p">
+            <legend style="font-size:26px"><b>Personal Information</b></legend>
+            <br />
+            <b>What is your name?</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="Text1" type="text" name="personal" placeholder="Enter your full name" title="Enter your full name please." pattern="[a-zA-Z0-9\s]+" size="50" required />
+            <br />
+            <br />
+            <b>What is your e-mail address?</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="Text2" type="text" pattern="[A-Za-z0-9._%+-]{1,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" placeholder="Please use a real one!" title="your@email.com" name="personal" size="50" required />
+            <br />
+            <br />
+        </fieldset>
+        <fieldset name="s">
+            <legend style="font-size:26px"><b>Survey Questions</b></legend>
+            <br />
+            <div id="one">
+                <b>Please check all that apply:</b>
+                <br />
+                <input id="Checkbox_1" type="checkbox" name="chxBx" value="I really like your Web site." /> I really like your Web site.
+                <br />
+                <input id="Checkbox_2" type="checkbox" name="chxBx" value="It's one of the best sites I've ever seen." /> It's one of the best sites I've ever seen.
+                <br />
+                <input id="Checkbox_3" type="checkbox" name="chxBx" value="I sure with my site looked as good as yours." /> I sure with my site looked as good as yours.
+                <br />
+                <input id="Checkbox_4" type="checkbox" name="chxBx" value="I have no taste and I'm pretty dense, so your site didn't do much for me." /> I have no taste and I'm pretty dense, so your site didn't do much for me.
+            </div>
+            <br />
+            <div id="two">
+                <b>Please rate my site on a scale of 1 (poor) to 10 (awesome):</b> <input id="numbers" type="number" min="1" max="10" name="rate" />
+            </div>
+            <br />
+            <div id="three">
+                <b>Please choose the one thing you love best about my web site:</b>
+                <br />
+                <input id="Radio1" type="radio" name="best" value="That amazing picture of you" required /> That amazing picture of you
+                <br />
+                <input id="Radio2" type="radio" name="best" value="All the cat photos, of course" /> All the cat photos, of course
+                <br />
+                <input id="Radio3" type="radio" name="best" value="The inspiring recap of your suburban childhood" /> The inspiring recap of your suburban childhood
+                <br />
+                <input id="Radio4" type="radio" name="best" value="The detailed list of all your Elvis memorabilia" /> The detailed list of all your Elvis memorabilia
+            </div>
+            <br />
+            <div id="four">
+                <b>How can I improve my web site?</b>
+                <br />
+                <select id="mySelect" name="choices" size="4">
+                    <option id="chose1" value="You can't. It couldn't be better.">You can't. It couldn't be better.</option>
+                    <option id="chose2" value="More about the cats.">More about the cats.</option>
+                    <option id="chose3" value="More about the family.">More about the family.</option>
+                    <option id="chose4" value="More about Elvis.">More about Elvis.</option>
+                </select>
+            </div>
+            <br />
+        </fieldset>
+        <fieldset name="f">
+            <legend style="font-size:26px"><b>Free For All!</b></legend>
+            <br />
+            <b>Feel free to send more praise, gift offers, etc.:</b>
+            <br />
+            <textarea id="TextArea1" rows="10" cols="55"></textarea>
+            <br />
+            <br />
+        </fieldset>
+        <br />
+        <input id="Submit1" type="submit" value="Click Here to Submit" onclick="myFunction()" /> or <input id="Reset1" type="reset" value="Erase and Start Over" />
+        <br />
+    </form>
+</body>
+</html>

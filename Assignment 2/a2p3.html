@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Metric Conversion</title>
+    <script type="text/javascript" src="asp3.js"></script>
+</head>
+<body>
+    <center>
+        <h1>Metric Converter</h1>
+        <center>
+            <form>
+                <table cellpadding=3 border=0 cellspacing=0>
+                    <tr>
+                        <td>
+                            <center>
+                                "Converting
+                                <input>
+                                to
+                                <input>
+                                <select name="convert" onBlur="ChangeVal()">
+                                    <optgroup label="Metric System"></optgroup>
+                                    <option value="100">Meter(s) to Centimeter(s)</option>
+                                    <option value="1000">Liter(s) to Milliliter(s)</option>
+                                    <option value="0.001">Gram(s) Kilograms(s)</option>
+                                    <option value="0.0166667">Second(s) to Minute(s)</option>
+                                    <optgroup label="English System"></optgroup>
+                                    <option value="0.0254">Inch(es) to Meter(s)</option>
+                                    <option value="0.035274">Gram(s) to Ounce(s)</option>
+                                    <option value="3.7854">Liter(s) to Quart(s)</option>
+                                    <option value="1760">Yard(s) to Mile(s)</option>
+                                </select> ?"
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                                <br />
+                                <input type="button" value="Conversion" onclick="Calc()">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+</body>
+</html>

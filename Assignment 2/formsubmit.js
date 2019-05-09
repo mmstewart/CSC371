@@ -1,0 +1,96 @@
+function myFunction()
+{
+    //alert("sfsadfds");
+    var fName = document.getElementById("Text1").value;
+    var lName = document.getElementById("Text2").value;
+    var strt = document.getElementById("Text3").value;
+    var strt2 = document.getElementById("Text4").value;
+    var city = document.getElementById("Text5").value;
+    var state = document.getElementsByName("state");
+    var selectedState = state.options[state.selectedIndex].text;
+    var zip = document.getElementById("Text6").value;
+    var country = document.getElementById("Text7").value;
+    var phone = document.getElementById("Text8").value;
+
+    var radio = document.querySelector('input[name = "optionGroup"]:checked').value;
+    var ccNumber = document.getElementById("ccardnumber").value;
+    var cardMonth = document.getElementsByName("ccardmonth");
+    var selectedMonth = cardMonth.options[cardMonth.selectedIndex].text;
+    var cardYear = document.getElementsByName("ccardyear");
+    var selectedYear = cardYear.options[cardYear.selectedIndex].text;
+    var csc = document.getElementById("csc3").value;
+
+    var email = document.getElementById("Text9").value;
+    var sNotes = document.getElementById("TextArea1").value;
+
+
+    document.writeln("***********Submitted Information***********");
+    document.writeln("<br>");
+    document.writeln("***********Billing Information***********");
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("Your First Name is " + fName + ".");
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("Your Last Name is " + lName + ".");
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("Your Street Address is " + strt);
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("Your Street Address (2) is " + strt2);
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("Your City is " + city);
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("Your State is " + state);
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("Your ZIP/Postal Code is " + zip);
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("Your Country is " + country);
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("Your Phone Number is " + country);
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("*******************************************");
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("***********Credit Card Information***********");
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("Your Credit Card provider is " + radio);
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("Your Credit Card number is " + ccNumber);
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("Your Credit Card expiration date is " + cardMonth + "/" + cardYear);
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("Your CSC is " + csc);
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("******************************************");
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("***********Additional Information***********");
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("Your Contact Email is " + email);
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("The special note you sent us is " + sNotes);
+    document.writeln("<br>");
+    document.writeln("<br>");
+    document.writeln("********************************************");
+    alert('<!DOCTYPE HTML>' + '\n' + document.documentElement.outerHTML);
+
+}

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--Marcus Stewart-->
+    <!--2/13/17-->
+    <meta charset="utf-8" />
+    <title>Online E-Learning/Assessment System</title>
+    <link rel="stylesheet" type="text/css" href="assignmentp4.css">
+    <script type="text/javascript" src="a4p4.js"></script>
+</head>
+<body>
+    <font style="font-size:26px"><b>Multiple Choice Quiz</b></font>
+    <br /><font style="color:#808080;font-size:17px">(See related pages)</font>
+    <form  method="post">
+        <br />
+        <br />
+        <hr class="style1">
+        <div id="numberCircle1">1</div>
+        <p id="ali1">
+            Students who, for whatever reason, are persuing undergraduate work at an age other than 18 24 year old student are referred to as
+            <br />
+            <br />
+            <input type="radio" name="question1" value="a" id="q0a"><b>A)</b>&nbsp;&nbsp;&nbsp;nontraditional-age students
+            <br />
+            <input type="radio" name="question1" value="b" id="q0b"><b>B)</b>&nbsp;&nbsp;&nbsp;minority students
+            <br />
+            <input type="radio" name="question1" value="c" id="q0c"><b>C)</b>&nbsp;&nbsp;&nbsp;matured students
+            <br />
+            <input type="radio" name="question1" value="d" id="q0d"><b>D)</b>&nbsp;&nbsp;&nbsp;career changing students
+        </p>
+        <br />
+        <br />
+        <hr class="style1">
+        <div id="numberCircle2">2</div>
+        <br />
+        <p id="ali2">
+            Which of the following makes James a nontraditional student?
+            <br />
+            <br />
+            <input type="radio" name="question2" value="a" id="q1a"><b>A)</b>&nbsp;&nbsp;&nbsp;He is young
+            <br />
+            <input type="radio" name="question2" value="b" id="q1b"><b>B)</b>&nbsp;&nbsp;&nbsp;He is 28 years old
+            <br />
+            <input type="radio" name="question2" value="c" id="q1c"><b>C)</b>&nbsp;&nbsp;&nbsp;He graduated from an inner-city high school
+            <br />
+            <input type="radio" name="question2" value="d" id="q1d"><b>D)</b>&nbsp;&nbsp;&nbsp;His parents emigrated from overseas before he was born
+        </p>
+        <br />
+        <hr class="style1">
+        <div id="numberCircle3">3</div>
+        <br />
+        <p id="ali3">
+            What is the value of the expression: 6 - (4 x 1) - 2
+            <br />
+            <br />
+            <input type="radio" name="question3" value="a" id="q2a"><b>A)</b>&nbsp;&nbsp;&nbsp;18
+            <br />
+            <input type="radio" name="question3" value="b" id="q2b"><b>B)</b>&nbsp;&nbsp;&nbsp;0
+            <br />
+            <input type="radio" name="question3" value="c" id="q2c"><b>C)</b>&nbsp;&nbsp;&nbsp;4
+            <br />
+            <input type="radio" name="question3" value="d" id="q2d"><b>D)</b>&nbsp;&nbsp;&nbsp;10
+        </p>
+        <br />
+        <hr class="style1">
+        <div id="numberCircle4">4</div>
+        <br />
+        <p id="ali4">
+            What is the capital of Great Britain?
+            <br />
+            <br />
+            <input type="radio" name="question4" value="a" id="q3a"><b>A)</b>&nbsp;&nbsp;&nbsp;London
+            <br />
+            <input type="radio" name="question4" value="b" id="q3b"><b>B)</b>&nbsp;&nbsp;&nbsp;Birmingham
+            <br />
+            <input type="radio" name="question4" value="c" id="q3c"><b>C)</b>&nbsp;&nbsp;&nbsp;Winchester
+            <br />
+            <input type="radio" name="question4" value="d" id="q3d"><b>D)</b>&nbsp;&nbsp;&nbsp;Nottingham
+        </p>
+        <br />
+        <hr class="style1">
+        <div id="numberCircle5">5</div>
+        <br />
+        <p id="ali5">
+            Which is the largest continent?
+            <br />
+            <br />
+            <input type="radio" name="question5" value="a" id="q4a"><b>A)</b>&nbsp;&nbsp;&nbsp;Europe
+            <br />
+            <input type="radio" name="question5" value="b" id="q4b"><b>B)</b>&nbsp;&nbsp;&nbsp;Africa
+            <br />
+            <input type="radio" name="question5" value="c" id="q4c"><b>C)</b>&nbsp;&nbsp;&nbsp;Asia
+            <br />
+            <input type="radio" name="question5" value="d" id="q4d"><b>D)</b>&nbsp;&nbsp;&nbsp;South America
+        </p>
+        <br />
+        <hr color="#bfbfbf">
+        <br />
+        <b>Enter your first name:</b>&nbsp;&nbsp;<input id="Text1" pattern="[A-Za-z]{1,32}" placeholder="Enter your first name." name="fName" title="Please enter your first name." type="text" size="45" required />
+        <br />
+        <br />
+        <b>Enter your last name:</b>&nbsp;&nbsp;&nbsp;<input id="Text2" pattern="[a-zA-Z' -]*" name="lName" title="Please enter your last name." placeholder="Enter your last name." type="text" size="45" required />
+        <br />
+        <br />
+        <b>Enter your email:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="Text3" type="text" pattern="[A-Za-z0-9._%+-]{1,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" placeholder="Please enter your email." title="your@email.com" name="personal" size="45" required />
+        <br />
+        <br />
+        <center><input id="Submit1" type="submit" value="Submit your answers" onclick="gradeTest()" /></center>
+    </form>
+</body>
+</html>

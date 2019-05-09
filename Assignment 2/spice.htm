@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+    <!--Marcus Stewart-->
+    <!--2/6/17-->
+    <title>Spice Bowl Financial Information</title>
+    <link rel="stylesheet" type="text/css" href="payment.css">
+    <script type="text/javascript" src="formsubmit.js"></script>
+</head>
+<body>
+    <header>
+        <img src="sblogo.png" alt="The Spice Bowl" />
+    </header>
+
+    <nav>
+        <ul>
+            <li class="newgroup"><a href="#">Home</a></li>
+            <li><a href="#">Keyword Search</a></li>
+
+            <li class="newgroup"><a href="#">Spices</a></li>
+            <li><a href="#">Seasonings</a></li>
+            <li><a href="#">Blends</a></li>
+            <li><a href="#">Salts &amp; Peppers</a></li>
+            <li><a href="#">Popcorn Seasonings</a></li>
+            <li><a href="#">Dip Mixes</a></li>
+            <li><a href="#">Bulk Spices</a></li>
+            <li><a href="#">Extracts</a></li>
+            <li><a href="#">Flavorings</a></li>
+
+            <li class="newgroup"><a href="#">Spice Jars</a></li>
+            <li><a href="#">Spice Jar Labels</a></li>
+            <li><a href="#">Spice Sets</a></li>
+            <li><a href="#">Mortar &amp; Pestles</a></li>
+
+            <li class="newgroup"><a href="#">Cookbooks</a></li>
+            <li><a href="#">Online Recipes</a></li>
+            <li><a href="#">Forums</a></li>
+
+            <li class="newgroup"><a href="#">My Account</a></li>
+            <li><a href="#">Checkout</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Shipping Info</a></li>
+
+            <li class="newgroup"><a href="#">Tech Support</a></li>
+            <li><a href="#">Hours</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section>
+
+        <h1>Payment Form</h1>
+
+        <form id="payment" name="payment" method="post" action="http://www.thespicebowlcop.com/cgi-bin/payment">
+
+            <fieldset id="billing">
+                <legend>Billing Information (required)</legend>
+                <label for="fName">First Name</label> <input id="Text1" pattern="[A-Za-z]{1,32}" name="fName" title="Please enter your first name." type="text" required />
+                <br />
+                <label for="lName">Last Name</label> <input id="Text2" pattern="[a-zA-Z' -]*" name="lName" title="Please enter your last name." type="text" required />
+                <br />
+                <label for="street">Street Address</label> <input id="Text3" name="street" title="Please enter your address." type="text" required />
+                <br />
+                <label for="street2">Street Address (2)</label> <input id="Text4" title="Company, Suite, Apt." name="street2" type="text" />
+                <br />
+                <label for="city">City</label> <input id="Text5" title="Please enter your city." name="city" pattern="[A-Za-z]{1,}" type="text" required />
+                <br />
+                <label for="state">State</label>
+                <select name="state" required="required">
+                    <option value="AL">AL</option>
+                    <option value="AK">AK</option>
+                    <option value="AZ">AZ</option>
+                    <option value="AR">AR</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DE">DE</option>
+                    <option value="FL">FL</option>
+                    <option value="GA">GA</option>
+                    <option value="HI">HI</option>
+                    <option value="ID">ID</option>
+                    <option value="IL">IL</option>
+                    <option value="IN">IN</option>
+                    <option value="IA">IA</option>
+                    <option value="KS">KS</option>
+                    <option value="KY">KY</option>
+                    <option value="LA">LA</option>
+                    <option value="ME">ME</option>
+                    <option value="MD">MD</option>
+                    <option value="MA">MA</option>
+                    <option value="MI">MI</option>
+                    <option value="MN">MN</option>
+                    <option value="MS">MS</option>
+                    <option value="MO">MO</option>
+                    <option value="MT">MT</option>
+                    <option value="NE">NE</option>
+                    <option value="NV">NV</option>
+                    <option value="NH">NH</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NM">NM</option>
+                    <option value="NY">NY</option>
+                    <option value="NC">NC</option>
+                    <option value="ND">ND</option>
+                    <option value="OH">OH</option>
+                    <option value="OK">OK</option>
+                    <option value="OR">OR</option>
+                    <option value="PA">PA</option>
+                    <option value="RI">RI</option>
+                    <option value="SC">SC</option>
+                    <option value="SD">SD</option>
+                    <option value="TN">TN</option>
+                    <option value="TX">TX</option>
+                    <option value="UT">UT</option>
+                    <option value="VT">VT</option>
+                    <option value="VA">VA</option>
+                    <option value="WA">WA</option>
+                    <option value="WV">WV</option>
+                    <option value="WI">WI</option>
+                    <option value="WY">WY</option>
+                </select>
+                <br />
+                <label for="zipPostal">ZIP/Postal Code</label> <input id="Text6" title="Format: xxxxx or xxxxx-xxxx" pattern="(\d{5}([\-]\d{4})?)" name="zipPostal" type="text" required />
+                <br />
+                <label for="country">Country</label> <input id="Text7" value="United States" name="country" pattern="[a-zA-Z][a-zA-Z ]{4,}" title="Please enter your country." type="text" required />
+                <br />
+                <label for="phone">Phone</label> <input id="Text8" title="Format: 123-456-7890" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="phone" type="text" required />
+                <br />
+            </fieldset>
+
+            <fieldset id="creditcard">
+                <legend>Credit Card (required)</legend>
+                <fieldset class="optionGroup">
+                    <label><input id="Radio1" type="radio" name="optionGroup" value="Diners" required /></label> <img src="diners.png" alt="Diners" />
+                    <label><input id="Radio2" type="radio" name="optionGroup" value="Discover"/></label> <img src="discover.png" alt="Discover" />
+                    <label><input id="Radio3" type="radio" name="optionGroup" value="Master"/></label> <img src="master.png" alt="Master" />
+                    <label><input id="Radio4" type="radio" name="optionGroup" value="Visa"/></label> <img src="visa.png" alt="Visa" />
+                </fieldset>
+                <label for="ccardnumber">Credit Card Number</label>
+                <input name="ccardnumber" id="ccardnumber" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" title="16 number format: 35xxxxxxxxxxxxxx, 2131xxxxxxxxxxxx, or 1800xxxxxxxxxxxx" required/>
+
+                <label>Expiration Date</label>
+                <select name="ccardmonth" required="required">
+                    <option>--Month--</option>
+                    <option value="Jan">January (01)</option>
+                    <option value="Feb">February (02)</option>
+                    <option value="Mar">March (03)</option>
+                    <option value="Apr">April (04)</option>
+                    <option value="May">May (05)</option>
+                    <option value="Jun">June (06)</option>
+                    <option value="Jul">July (07)</option>
+                    <option value="Aug">August (08)</option>
+                    <option value="Sep">September (09)</option>
+                    <option value="Oct">October (10)</option>
+                    <option value="Nov">November (11)</option>
+                    <option value="Dec">December (12)</option>
+                </select>
+                <select name="ccardyear" required="required">
+                    <option>--Year--</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                </select>
+                <label for="csc">CSC</label>
+                <input id="csc3" name="csc" placeholder="nnn" title="3 number format" pattern="^\d{3}$" required />
+            </fieldset>
+            <fieldset id="info">
+                <legend>Additional Information</legend>
+                <label>Contact Email</label><input id="Text9" type="text" pattern="[A-Za-z0-9._%+-]{1,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" title="your@email.com" />
+                <label>Special Notes</label> <textarea id="TextArea1"></textarea>
+
+
+            </fieldset>
+
+            <input type="submit" value="Submit Order" onclick="myFunction()" />
+        </form>
+    </section>
+
+
+</body>
+
+</html>
